@@ -12,14 +12,14 @@
 <ows:Operation name="GetCapabilities">
 <ows:DCP>
 <ows:HTTP>
-<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS?">
+<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/TiandiTuShanDongSatelliteHybridMap/WMTS?">
 <ows:Constraint name="GetEncoding">
 <ows:AllowedValues>
 <ows:Value>KVP</ows:Value>
 </ows:AllowedValues>
 </ows:Constraint>
 </ows:Get>
-<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS">
+<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/TiandiTuShanDongSatelliteHybridMap/WMTS">
 <ows:Constraint name="GetEncoding">
 <ows:AllowedValues>
 <ows:Value>RESTful</ows:Value>
@@ -32,14 +32,14 @@
 <ows:Operation name="GetTilesUrl">
 <ows:DCP>
 <ows:HTTP>
-<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS?">
+<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/TiandiTuShanDongSatelliteHybridMap/WMTS?">
 <ows:Constraint name="GetEncoding">
 <ows:AllowedValues>
 <ows:Value>KVP</ows:Value>
 </ows:AllowedValues>
 </ows:Constraint>
 </ows:Get>
-<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS">
+<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/TiandiTuShanDongSatelliteHybridMap/WMTS">
 <ows:Constraint name="GetEncoding">
 <ows:AllowedValues>
 <ows:Value>RESTful</ows:Value>
@@ -52,290 +52,270 @@
 </ows:OperationsMetadata>
 <Contents>
 <Layer>
-<ows:Title>GoogleChinaHybridMap</ows:Title>
-<ows:Identifier>GoogleChinaHybridMap</ows:Identifier>
+<ows:Title>TiandiTuShanDongSatelliteHybridMap</ows:Title>
+<ows:Identifier>TiandiTuShanDongSatelliteHybridMap</ows:Identifier>
 <ows:WGS84BoundingBox crs="urn:ogc:def:crs:OGC:2:84">
-<ows:LowerCorner>-180 -85.05112878</ows:LowerCorner>
-<ows:UpperCorner>180 85.05112878</ows:UpperCorner>
+<ows:LowerCorner>114.229839088925 33.9389305555556</ows:LowerCorner>
+<ows:UpperCorner>123.400530149205 38.9048194444444</ows:UpperCorner>
 </ows:WGS84BoundingBox>
-<ows:BoundingBox crs="urn:ogc:def:crs:EPSG::102100">
-<ows:LowerCorner>-20037508.3427892 -20037508.3430388</ows:LowerCorner>
-<ows:UpperCorner>20037508.3427892 20037508.3430388</ows:UpperCorner>
-</ows:BoundingBox>
 <TileMatrixSetLink>
-<TileMatrixSet>AZMap_GoogleChinaHybridMap</TileMatrixSet>
+<TileMatrixSet>AZMap_TiandiTuShanDongSatelliteHybridMap</TileMatrixSet>
 <TileMatrixSetLimits>
 <TileMatrixLimits>
 <TileMatrix>4</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>15</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>15</MaxTileCol>
+<MinTileRow>2</MinTileRow>
+<MaxTileRow>2</MaxTileRow>
+<MinTileCol>13</MinTileCol>
+<MaxTileCol>13</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>5</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>31</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>31</MaxTileCol>
+<MinTileRow>4</MinTileRow>
+<MaxTileRow>4</MaxTileRow>
+<MinTileCol>26</MinTileCol>
+<MaxTileCol>26</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>6</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>63</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>63</MaxTileCol>
+<MinTileRow>9</MinTileRow>
+<MaxTileRow>9</MaxTileRow>
+<MinTileCol>52</MinTileCol>
+<MaxTileCol>53</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>7</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>127</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>127</MaxTileCol>
+<MinTileRow>18</MinTileRow>
+<MaxTileRow>19</MaxTileRow>
+<MinTileCol>104</MinTileCol>
+<MaxTileCol>107</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>8</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>255</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>255</MaxTileCol>
+<MinTileRow>36</MinTileRow>
+<MaxTileRow>39</MaxTileRow>
+<MinTileCol>209</MinTileCol>
+<MaxTileCol>215</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>9</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>511</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>511</MaxTileCol>
+<MinTileRow>72</MinTileRow>
+<MaxTileRow>79</MaxTileRow>
+<MinTileCol>418</MinTileCol>
+<MaxTileCol>431</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>10</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>1023</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>1023</MaxTileCol>
+<MinTileRow>145</MinTileRow>
+<MaxTileRow>159</MaxTileRow>
+<MinTileCol>836</MinTileCol>
+<MaxTileCol>863</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>11</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>2047</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>2047</MaxTileCol>
+<MinTileRow>290</MinTileRow>
+<MaxTileRow>318</MaxTileRow>
+<MinTileCol>1673</MinTileCol>
+<MaxTileCol>1726</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>12</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>4095</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>4095</MaxTileCol>
+<MinTileRow>581</MinTileRow>
+<MaxTileRow>637</MaxTileRow>
+<MinTileCol>3347</MinTileCol>
+<MaxTileCol>3452</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>13</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>8191</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>8191</MaxTileCol>
+<MinTileRow>1162</MinTileRow>
+<MaxTileRow>1275</MaxTileRow>
+<MinTileCol>6695</MinTileCol>
+<MaxTileCol>6904</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>14</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>16383</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>16383</MaxTileCol>
+<MinTileRow>2325</MinTileRow>
+<MaxTileRow>2551</MaxTileRow>
+<MinTileCol>13390</MinTileCol>
+<MaxTileCol>13808</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>15</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>32767</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>32767</MaxTileCol>
+<MinTileRow>4650</MinTileRow>
+<MaxTileRow>5102</MaxTileRow>
+<MinTileCol>26781</MinTileCol>
+<MaxTileCol>27616</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>16</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>65535</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>65535</MaxTileCol>
+<MinTileRow>9301</MinTileRow>
+<MaxTileRow>10205</MaxTileRow>
+<MinTileCol>53562</MinTileCol>
+<MaxTileCol>55232</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>17</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>131071</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>131071</MaxTileCol>
+<MinTileRow>18603</MinTileRow>
+<MaxTileRow>20411</MaxTileRow>
+<MinTileCol>107125</MinTileCol>
+<MaxTileCol>110464</MaxTileCol>
 </TileMatrixLimits>
 <TileMatrixLimits>
 <TileMatrix>18</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>262143</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>262143</MaxTileCol>
-</TileMatrixLimits>
-<TileMatrixLimits>
-<TileMatrix>19</TileMatrix>
-<MinTileRow>0</MinTileRow>
-<MaxTileRow>524287</MaxTileRow>
-<MinTileCol>0</MinTileCol>
-<MaxTileCol>524287</MaxTileCol>
+<MinTileRow>37206</MinTileRow>
+<MaxTileRow>40822</MaxTileRow>
+<MinTileCol>214251</MinTileCol>
+<MaxTileCol>220929</MaxTileCol>
 </TileMatrixLimits>
 </TileMatrixSetLimits>
 </TileMatrixSetLink>
-<ResourceURL format="image/png" resourceType="tile" template="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS/GoogleChinaHybridMap/default/AZMap_GoogleChinaHybridMap/{TileMatrix}/{TileRow}/{TileCol}.png"/>
+<ResourceURL format="image/png" resourceType="tile" template="http://localhost:9009/arctiler/ogc/services/TiandiTuShanDongSatelliteHybridMap/WMTS/TiandiTuShanDongSatelliteHybridMap/default/AZMap_TiandiTuShanDongSatelliteHybridMap/{TileMatrix}/{TileRow}/{TileCol}.png"/>
 <Style isDefault="true">
 <ows:Identifier>default</ows:Identifier>
 </Style>
 <Format>image/png</Format>
 </Layer>
 <TileMatrixSet>
-<ows:Title>AZMap_GoogleChinaHybridMap</ows:Title>
+<ows:Title>AZMap_TiandiTuShanDongSatelliteHybridMap</ows:Title>
 <ows:Abstract>This tilematrixset defined by AZMap,the dpi is 96. </ows:Abstract>
-<ows:Identifier>AZMap_GoogleChinaHybridMap</ows:Identifier>
-<ows:SupportedCRS>urn:ogc:def:crs:EPSG::102100</ows:SupportedCRS>
+<ows:Identifier>AZMap_TiandiTuShanDongSatelliteHybridMap</ows:Identifier>
+<ows:SupportedCRS>urn:ogc:def:crs:EPSG::4326</ows:SupportedCRS>
 <ows:WellKnownScaleSet>Custom</ows:WellKnownScaleSet>
 <TileMatrix>
 <ows:Identifier>4</ows:Identifier>
 <ScaleDenominator>36978669.4318207</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>16</MatrixWidth>
-<MatrixHeight>16</MatrixHeight>
+<MatrixHeight>8</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>5</ows:Identifier>
-<ScaleDenominator>18489334.7159104</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<ScaleDenominator>18489334.7159103</ScaleDenominator>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>32</MatrixWidth>
-<MatrixHeight>32</MatrixHeight>
+<MatrixHeight>16</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>6</ows:Identifier>
-<ScaleDenominator>9244667.35795518</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<ScaleDenominator>9244667.35795517</ScaleDenominator>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>64</MatrixWidth>
-<MatrixHeight>64</MatrixHeight>
+<MatrixHeight>32</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>7</ows:Identifier>
 <ScaleDenominator>4622333.67897759</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>128</MatrixWidth>
-<MatrixHeight>128</MatrixHeight>
+<MatrixHeight>64</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>8</ows:Identifier>
 <ScaleDenominator>2311166.83948879</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>256</MatrixWidth>
-<MatrixHeight>256</MatrixHeight>
+<MatrixHeight>128</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>9</ows:Identifier>
 <ScaleDenominator>1155583.4197444</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>512</MatrixWidth>
-<MatrixHeight>512</MatrixHeight>
+<MatrixHeight>256</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>10</ows:Identifier>
-<ScaleDenominator>577791.709872199</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<ScaleDenominator>577791.709872198</ScaleDenominator>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>1024</MatrixWidth>
-<MatrixHeight>1024</MatrixHeight>
+<MatrixHeight>512</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>11</ows:Identifier>
 <ScaleDenominator>288895.854936099</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>2048</MatrixWidth>
-<MatrixHeight>2048</MatrixHeight>
+<MatrixHeight>1024</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>12</ows:Identifier>
 <ScaleDenominator>144447.92746805</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>4096</MatrixWidth>
-<MatrixHeight>4096</MatrixHeight>
+<MatrixHeight>2048</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>13</ows:Identifier>
 <ScaleDenominator>72223.9637340248</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>8192</MatrixWidth>
-<MatrixHeight>8192</MatrixHeight>
+<MatrixHeight>4096</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>14</ows:Identifier>
 <ScaleDenominator>36111.9818670124</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>16384</MatrixWidth>
-<MatrixHeight>16384</MatrixHeight>
+<MatrixHeight>8192</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>15</ows:Identifier>
 <ScaleDenominator>18055.9909335062</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>32768</MatrixWidth>
-<MatrixHeight>32768</MatrixHeight>
+<MatrixHeight>16384</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>16</ows:Identifier>
 <ScaleDenominator>9027.9954667531</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>65536</MatrixWidth>
-<MatrixHeight>65536</MatrixHeight>
+<MatrixHeight>32768</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>17</ows:Identifier>
 <ScaleDenominator>4513.99773337655</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>131072</MatrixWidth>
-<MatrixHeight>131072</MatrixHeight>
+<MatrixHeight>65536</MatrixHeight>
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>18</ows:Identifier>
-<ScaleDenominator>2256.99886668828</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
+<ScaleDenominator>2256.99886668827</ScaleDenominator>
+<TopLeftCorner>89.999875117173 -180.00560128704</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
 <MatrixWidth>262144</MatrixWidth>
-<MatrixHeight>262144</MatrixHeight>
-</TileMatrix>
-<TileMatrix>
-<ows:Identifier>19</ows:Identifier>
-<ScaleDenominator>1128.49943334414</ScaleDenominator>
-<TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
-<TileWidth>256</TileWidth>
-<TileHeight>256</TileHeight>
-<MatrixWidth>524288</MatrixWidth>
-<MatrixHeight>524288</MatrixHeight>
+<MatrixHeight>131072</MatrixHeight>
 </TileMatrix>
 </TileMatrixSet>
 </Contents>
-<ServiceMetadataURL xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS/1.1.1/WMTSCapabilities.xml"/>
+<ServiceMetadataURL xlink:href="http://localhost:9009/arctiler/ogc/services/TiandiTuShanDongSatelliteHybridMap/WMTS/1.1.1/WMTSCapabilities.xml"/>
 </Capabilities>
