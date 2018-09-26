@@ -12,14 +12,14 @@
 <ows:Operation name="GetCapabilities">
 <ows:DCP>
 <ows:HTTP>
-<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaSatelliteMap/WMTS?">
+<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS?">
 <ows:Constraint name="GetEncoding">
 <ows:AllowedValues>
 <ows:Value>KVP</ows:Value>
 </ows:AllowedValues>
 </ows:Constraint>
 </ows:Get>
-<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaSatelliteMap/WMTS">
+<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS">
 <ows:Constraint name="GetEncoding">
 <ows:AllowedValues>
 <ows:Value>RESTful</ows:Value>
@@ -32,14 +32,14 @@
 <ows:Operation name="GetTilesUrl">
 <ows:DCP>
 <ows:HTTP>
-<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaSatelliteMap/WMTS?">
+<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS?">
 <ows:Constraint name="GetEncoding">
 <ows:AllowedValues>
 <ows:Value>KVP</ows:Value>
 </ows:AllowedValues>
 </ows:Constraint>
 </ows:Get>
-<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaSatelliteMap/WMTS">
+<ows:Get xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS">
 <ows:Constraint name="GetEncoding">
 <ows:AllowedValues>
 <ows:Value>RESTful</ows:Value>
@@ -52,8 +52,8 @@
 </ows:OperationsMetadata>
 <Contents>
 <Layer>
-<ows:Title>GoogleChinaSatelliteMap</ows:Title>
-<ows:Identifier>GoogleChinaSatelliteMap</ows:Identifier>
+<ows:Title>GoogleChinaHybridMap</ows:Title>
+<ows:Identifier>GoogleChinaHybridMap</ows:Identifier>
 <ows:WGS84BoundingBox crs="urn:ogc:def:crs:OGC:2:84">
 <ows:LowerCorner>-180 -85.05112878</ows:LowerCorner>
 <ows:UpperCorner>180 85.05112878</ows:UpperCorner>
@@ -63,7 +63,7 @@
 <ows:UpperCorner>20037508.3427892 20037508.3430388</ows:UpperCorner>
 </ows:BoundingBox>
 <TileMatrixSetLink>
-<TileMatrixSet>AZMap_GoogleChinaSatelliteMap</TileMatrixSet>
+<TileMatrixSet>AZMap_GoogleChinaHybridMap</TileMatrixSet>
 <TileMatrixSetLimits>
 <TileMatrixLimits>
 <TileMatrix>4</TileMatrix>
@@ -179,23 +179,21 @@
 </TileMatrixLimits>
 </TileMatrixSetLimits>
 </TileMatrixSetLink>
-<ResourceURL format="image/jpg" resourceType="tile" template="http://localhost:9009/arctiler/ogc/services/GoogleChinaSatelliteMap/WMTS/GoogleChinaSatelliteMap/default/AZMap_GoogleChinaSatelliteMap/{TileMatrix}/{TileRow}/{TileCol}.jpg"/>
+<ResourceURL format="image/png" resourceType="tile" template="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS/GoogleChinaHybridMap/default/AZMap_GoogleChinaHybridMap/{TileMatrix}/{TileRow}/{TileCol}.png"/>
 <Style isDefault="true">
 <ows:Identifier>default</ows:Identifier>
 </Style>
-<Format>image/jpg</Format>
+<Format>image/png</Format>
 </Layer>
 <TileMatrixSet>
-<ows:Title>AZMap_GoogleChinaSatelliteMap</ows:Title>
-<ows:Abstract>
-This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
-</ows:Abstract>
-<ows:Identifier>AZMap_GoogleChinaSatelliteMap</ows:Identifier>
+<ows:Title>AZMap_GoogleChinaHybridMap</ows:Title>
+<ows:Abstract>This tilematrixset defined by AZMap,the dpi is 96. </ows:Abstract>
+<ows:Identifier>AZMap_GoogleChinaHybridMap</ows:Identifier>
 <ows:SupportedCRS>urn:ogc:def:crs:EPSG::102100</ows:SupportedCRS>
 <ows:WellKnownScaleSet>Custom</ows:WellKnownScaleSet>
 <TileMatrix>
 <ows:Identifier>4</ows:Identifier>
-<ScaleDenominator>34942641.5017949</ScaleDenominator>
+<ScaleDenominator>36978669.4318207</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -204,7 +202,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>5</ows:Identifier>
-<ScaleDenominator>17471320.7508974</ScaleDenominator>
+<ScaleDenominator>18489334.7159104</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -213,7 +211,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>6</ows:Identifier>
-<ScaleDenominator>8735660.37544871</ScaleDenominator>
+<ScaleDenominator>9244667.35795518</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -222,7 +220,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>7</ows:Identifier>
-<ScaleDenominator>4367830.18772436</ScaleDenominator>
+<ScaleDenominator>4622333.67897759</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -231,7 +229,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>8</ows:Identifier>
-<ScaleDenominator>2183915.09386218</ScaleDenominator>
+<ScaleDenominator>2311166.83948879</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -240,7 +238,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>9</ows:Identifier>
-<ScaleDenominator>1091957.54693109</ScaleDenominator>
+<ScaleDenominator>1155583.4197444</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -249,7 +247,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>10</ows:Identifier>
-<ScaleDenominator>545978.773465545</ScaleDenominator>
+<ScaleDenominator>577791.709872199</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -258,7 +256,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>11</ows:Identifier>
-<ScaleDenominator>272989.386732772</ScaleDenominator>
+<ScaleDenominator>288895.854936099</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -267,7 +265,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>12</ows:Identifier>
-<ScaleDenominator>136494.693366386</ScaleDenominator>
+<ScaleDenominator>144447.92746805</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -276,7 +274,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>13</ows:Identifier>
-<ScaleDenominator>68247.3466831931</ScaleDenominator>
+<ScaleDenominator>72223.9637340248</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -285,7 +283,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>14</ows:Identifier>
-<ScaleDenominator>34123.6733415965</ScaleDenominator>
+<ScaleDenominator>36111.9818670124</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -294,7 +292,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>15</ows:Identifier>
-<ScaleDenominator>17061.8366707983</ScaleDenominator>
+<ScaleDenominator>18055.9909335062</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -303,7 +301,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>16</ows:Identifier>
-<ScaleDenominator>8530.91833539913</ScaleDenominator>
+<ScaleDenominator>9027.9954667531</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -312,7 +310,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>17</ows:Identifier>
-<ScaleDenominator>4265.45916769957</ScaleDenominator>
+<ScaleDenominator>4513.99773337655</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -321,7 +319,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>18</ows:Identifier>
-<ScaleDenominator>2132.72958384978</ScaleDenominator>
+<ScaleDenominator>2256.99886668828</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -330,7 +328,7 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 <TileMatrix>
 <ows:Identifier>19</ows:Identifier>
-<ScaleDenominator>1066.36479192489</ScaleDenominator>
+<ScaleDenominator>1128.49943334414</ScaleDenominator>
 <TopLeftCorner>-20037508.3427892 20037508.3430388</TopLeftCorner>
 <TileWidth>256</TileWidth>
 <TileHeight>256</TileHeight>
@@ -339,5 +337,5 @@ This tilematrixset defined by AZMap,the dpi is 90.7142857142857.
 </TileMatrix>
 </TileMatrixSet>
 </Contents>
-<ServiceMetadataURL xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaSatelliteMap/WMTS/1.1.1/WMTSCapabilities.xml"/>
+<ServiceMetadataURL xlink:href="http://localhost:9009/arctiler/ogc/services/GoogleChinaHybridMap/WMTS/1.1.1/WMTSCapabilities.xml"/>
 </Capabilities>
